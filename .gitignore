@@ -1,0 +1,18 @@
+# Logs
+*.log
+moves.csv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+.env/
+
+# macOS metadata
+.DS_Store
+
+# VSCode settings
+.vscode/
