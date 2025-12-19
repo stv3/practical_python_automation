@@ -1,50 +1,55 @@
-Largest Files Scanner — Practical Python Automation
 
-A practical, real-world Python automation script that scans any directory and identifies the largest files, making it easy to locate space-consuming data on your system.
+# 📂 **Largest Files Scanner**  
+### *A Practical Python Automation Tool to Find the Biggest Space Hogs on Your System*
 
-This tool is fully interactive, cross-platform, dependency-free, and includes a smooth progress bar to visualize scan progress.
-Works on macOS, Linux, and Windows.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.7+-blue?logo=python" />
+  <img src="https://img.shields.io/badge/Platform-macOS%20%7C%20Linux%20%7C%20Windows-green" />
+  <img src="https://img.shields.io/badge/License-MIT-purple" />
+</p>
 
-The script includes:
-📁 Recursive directory scanning
-📊 Real-time progress bar
-📐 Human-readable file sizes (KB, MB, GB, TB)
-🔢 Customizable “Top N” results
-🧪 Graceful handling of permission errors
-🐍 Python 3.7+ compatible
+## 📝 **Overview**
+The **Largest Files Scanner** is a lightweight, interactive Python automation script that scans any directory and displays the **largest N files** found, sorted from biggest to smallest. It helps you quickly identify what's consuming disk space — whether in your Downloads folder, home directory, or large external drives.
+
+It includes:
+- 📁 Recursive scanning  
+- 📊 Real-time progress bar  
+- 🔢 Configurable "Top N" results  
+- 📐 Human-readable file sizes  
+- ⚙️ No external dependencies  
+- 🖥 Works on macOS, Linux, and Windows  
+
+## ✨ **Features**
+### ✔ Recursive directory scanning  
+Searches every file within the provided folder (and subfolders).
+
+### ✔ Interactive prompts  
+The script asks you:
+- Which directory to scan  
+- How many largest files to display  
+
+### ✔ Real-time progress bar  
+A clean terminal progress bar updates from **0% → 100%**.
+
+### ✔ Human-readable sizes  
+Outputs file sizes in:
 
 
-📦 Features
-✔ Scan directories recursively
-Searches through the chosen directory—including all subfolders—to locate every file.
+### ✔ Error-safe scanning  
+Skips unreadable or inaccessible files automatically.
 
-✔ Interactive mode
-User is prompted for:
-The directory to scan
-Number of largest files to display
-No arguments or setup required.
-
-✔ Real-time progress bar
-Provides visual feedback from 0% → 100% while scanning files.
-
-✔ Human-readable sizes
-Converts raw bytes into human-friendly units:
-B → KB → MB → GB → TB
-
-✔ Error-safe
-Skips files that cannot be accessed due to permission issues, locks, or broken symlinks.
-
-🚀 Usage
-Run the interactive scanner
+## 🚀 **Usage**
+### Run the script
+```bash
 python3 largest_files.py
 
-Example interaction
+
 Enter a directory path (e.g. /home/stv3/Downloads): /home/stv3/Downloads
 
 Counting files...
 Found 3245 files. Scanning...
 
-[██████████████--------------------------] 44.21%
+[██████████████--------------------------] 43.87%
 
 How many top files do you want to see? (e.g. 20): 20
 
@@ -54,4 +59,3 @@ Top 20 largest files under: /home/stv3/Downloads
 920.12 MB | /home/stv3/Downloads/game.zip
 512.33 MB | /home/stv3/Downloads/video.mp4
 ...
-
