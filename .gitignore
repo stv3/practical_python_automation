@@ -7,12 +7,33 @@ __pycache__/
 *.pyc
 *.pyo
 
+# Build / packaging
+build/
+dist/
+*.egg-info/
+
 # Virtual environments
 venv/
 .env/
+.venv/
+
+# Test / tools cache
+.pytest_cache/
+.mypy_cache/
 
 # macOS metadata
 .DS_Store
 
+# Windows metadata
+Thumbs.db
+
 # VSCode settings
 .vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Temporary/editor files
+*.tmp
+*~
+*.swp
